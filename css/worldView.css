@@ -1,0 +1,222 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html, body {
+	max-width: 100%;
+}
+
+#wrapper { width: 100%; }
+
+header {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+
+/*각종 소개 메뉴*/
+.menu { 
+	width: 100%; 
+	height: 100px; 
+	position: relative; 
+}
+
+.infoMenu {
+	width: 600px;
+	height: 50%;
+	line-height: 50px;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.infoMenu > li {
+	width: 33.33%;
+	height: 100%;
+	text-align: center;
+	border-right: 1px solid #888;
+	display: block;
+	float: left;
+}
+
+.infoMenu > li > a:hover {
+	font-weight: bold;
+	font-size: 20px;
+	transition: font-size 0.1s;
+	text-shadow: 5px 10px 4px black;
+}
+
+.infoMenu > li:last-child { border-right: 0; }
+.infoMenu > li > a { color: black; }
+/*각종 소개 메뉴 끝*/
+
+
+/*이미지 전체 설정*/
+.logo { 
+	width: 100%; 
+	height: 500px; 
+	position: relative;
+}
+
+.logo > img {
+	max-width: 100%;
+	max-height: 100%;
+}
+/*이미지 전체 설정 끝*/
+
+
+/*타이틀 설정*/
+.title {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	margin-top: 3%;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 4vw;
+}
+
+.titleContent > p > span {
+	color: red;
+}
+
+.titleLogo {
+	color: black;
+	text-shadow: -2px 0 white , 0 2px white , 2px 0 white, 0 -2px white;
+	margin-top: 8%;
+}
+/*타이틀 끝*/
+
+
+/*사이트 종류: 메뉴에서 선택한 곳이 어딘지 알려줌*/
+.mainContent {
+	width: 100%;
+	height: 1000px;
+}
+
+.menuText {
+	width: 30%;
+	height: 130px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 150px;
+	letter-spacing: 10px;
+	font-size: 30px;
+	font-family: arial;
+	font-weight: 800;
+	border-bottom: 1.5px solid #888;
+}
+/*사이트 종류 끝*/
+
+
+/*세계관 소개문*/
+.worldView {
+	width: 100%;
+	height: 100%;
+	margin-top: 3%;
+	position: relative;
+}
+
+.mainView { position: absolute; }
+
+.mainView > img {
+	width: 100%;
+	height: 100%;
+}
+
+.worldIntro {
+	width: 100%;
+	margin-top: 5%;
+	position: absolute;
+	text-align: center;
+}
+
+.worldIntro > h1 {
+	font-size: 2.5vw;
+	color: skyblue;
+}
+
+.worldIntro > p {
+	font-size: 1vw;
+	color: #888;
+}
+
+.worldIntro > h4 {
+	font-size: 2vw;
+	color: #fff;
+}
+/*세계관 소개문 끝*/
+
+
+/*세계관 트레일러*/
+.worldTraier {
+	width: 40vw;
+	height: 23vw;
+	background-color: white;
+	position: absolute;
+	margin-top: 28%;
+	margin-left: 28%;
+}
+
+.slide {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slide > ul {
+	width: 500%;
+	height: 100%;
+	transition: margin-left 1s;   /*margin-left를 안쓰면 새로고침시 문제 발생*/
+}
+
+.slide > ul > li { 
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+
+.slide > ul > li:nth-child(n) { background-color: black; }
+
+.slide > ul > li > iframe { width: 100%; height: 100%; }
+
+.slide > input { display: none; }
+
+.slide label {
+	width: 13px;
+	height: 13px;
+	cursor: pointer;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: #fff;
+	border: 2px solid #666;
+	transition: border-radius: 100%, 0.3s;
+}
+
+.slide > .pos {
+	width: 100%;
+	bottom: 10px; 
+	left: 0;
+	position: absolute;
+	text-align: center;
+}
+
+#pos1:checked~ul { margin-left: 0%; }
+#pos2:checked~ul { margin-left: -100%; }
+#pos3:checked~ul { margin-left: -200%; }
+#pos4:checked~ul { margin-left: -300%; }
+#pos5:checked~ul { margin-left: -400%; }
+
+#pos1:checked~.pos > label:nth-child(1) { background-color: #666; }
+#pos2:checked~.pos > label:nth-child(2) { background-color: #666; }
+#pos3:checked~.pos > label:nth-child(3) { background-color: #666; }
+#pos4:checked~.pos > label:nth-child(4) { background-color: #666; }
+#pos5:checked~.pos > label:nth-child(5) { background-color: #666; }
+/*세계관 트레일러 끝*/

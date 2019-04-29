@@ -1,0 +1,198 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+html, body {
+	max-width: 100%;
+}
+
+#wrapper { width: 100%; }
+
+header {
+	width: 100%;
+	height: 600px;
+	position: relative;
+}
+
+
+/*각종 소개 메뉴*/
+.menu { 
+	width: 100%; 
+	height: 100px; 
+	position: relative; 
+}
+
+.infoMenu {
+	width: 600px;
+	height: 50%;
+	line-height: 50px;
+	position: absolute;
+	top: 50%; 
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.infoMenu > li {
+	width: 33.33%;
+	height: 100%;
+	text-align: center;
+	border-right: 1px solid #888;
+	display: block;
+	float: left;
+}
+
+.infoMenu > li > a:hover {
+	font-weight: bold;
+	font-size: 20px;
+	transition: font-size 0.1s;
+	text-shadow: 5px 10px 4px black;
+}
+
+.infoMenu > li:last-child { border-right: 0; }
+.infoMenu > li > a { color: black; }
+/*각종 소개 메뉴 끝*/
+
+
+/*이미지 전체 설정*/
+.logo { 
+	width: 100%; 
+	height: 500px; 
+	position: relative;
+}
+
+.logo > img {
+	max-width: 100%;
+	max-height: 100%;
+}
+/*이미지 전체 설정 끝*/
+
+
+/*타이틀 설정*/
+.title {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	margin-top: 3%;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 4vw;		/*사이트의 크기가 달라질때마다 폰트 크기도 달라진다*/
+}
+
+.titleContent > p > span {
+	color: red;
+}
+
+.titleLogo {
+	color: black;
+	text-shadow: -2px 0 white , 0 2px white , 2px 0 white, 0 -2px white;
+	margin-top: 8%;
+}
+/*타이틀 끝*/
+
+
+/*사이트 종류: 메뉴에서 선택한 곳이 어딘지 알려줌*/
+.mainContent {
+	width: 100%;
+	height: 1000px;
+}
+
+.menuText {
+	width: 30%;
+	height: 130px;
+	margin: 0 auto;
+	text-align: center;
+	line-height: 150px;
+	letter-spacing: 10px;
+	font-size: 30px;
+	font-family: arial;
+	font-weight: 800;
+	border-bottom: 1.5px solid #888;
+}
+/*사이트 종류 끝*/
+
+
+/*게임 소개문*/
+.gameIntro {
+	width: 100%;
+	height: 910px;
+	margin: 0 auto;
+	margin-top: 3%;
+	position: relative;
+}
+
+.bg {
+	position: absolute;
+	z-index: -1;
+}
+
+.bg > img {
+	width: 100%;
+	height: 910px;
+}
+
+.mainIntro > ul {
+	padding-top: 3%;
+	height: 910px;
+}
+
+.mainIntro > ul > li {
+	width: 950px;
+	height: 200px;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-bottom: 5%;
+	box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+}
+
+.mainIntro > ul > li:first-child {
+	margin-right: 800px; 
+}
+.mainIntro > ul > li:last-child {
+	margin-bottom: 0;
+	margin-right: 800px;
+}
+
+.mainIntro > ul > li:nth-child(2n) {
+	margin-right: 153px;
+	background-color: white;
+}
+
+.iconLogo { 
+	width: 285px;
+	height: 100%;
+	float: left;
+}
+
+.iconLogo > img {
+	width: 100%;
+	height: 100%;
+}
+
+.iconLogo > .longerIMG {
+	margin-top: -13%;
+	height: 238px;
+}
+
+.Introduction {
+	width: 70%;
+	height: 100%;
+	float: left;
+	background-color: #D8D8D8;
+	padding-left: 5%;
+}
+
+.Introduction > h2 {
+	margin-top: 20px;
+	font-family: arial;
+	font-weight: 800;
+}
+
+.Introduction > p {
+	margin-top: 2%;	
+}
+/*게임 소개문 끝*/
