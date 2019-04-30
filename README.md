@@ -5,7 +5,7 @@
 해왔던 게임을 내 스타일대로 CSS, JavaScript를 이용해서 만들었습니다.
 
 <br>
-주소: [주소](mongjja106.dothome.co.kr)
+사이트 주소: mongjja106.dothome.co.kr
 <br>
 
 접속시 첫 화면입니다.
