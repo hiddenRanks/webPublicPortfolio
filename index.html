@@ -8,7 +8,8 @@
 	<script src="js/notYet.js"></script>
 </head>
 <body>
-	<video id="video" preload="auto" autoplay="autoplay">
+	<!-- muted를 안써주면 DOMException을 발생시킨다. -->
+	<video id="video" autoplay="autoplay" loop="loop" muted="muted">
 		<source src="video/videoplayback.mp4" type="video/mp4">
 	</video>
 
