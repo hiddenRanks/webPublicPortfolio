@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="../css/worldView.css">
 	<script src="../js/jquery-2.2.3.min.js"></script>
 	<script src="../js/notYet.js"></script>
-	<script src="../js/wordlView.js"></script>
+	<script src="../js/iframeVideo.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -61,39 +61,14 @@
 					</div>
 
 					<div class="worldTraier">
-						<div class="slide">
-							<input type="radio" name="pos" id="pos1" checked>
-							<input type="radio" name="pos" id="pos2">
-							<input type="radio" name="pos" id="pos3">
-							<input type="radio" name="pos" id="pos4">
-							<input type="radio" name="pos" id="pos5">
-
-							<ul class="video">
-								<li>
-									<iframe src="https://www.youtube.com/embed/WxpkpIWfpq4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</li>
-								<li>
-									<iframe width="673" height="377" src="https://www.youtube.com/embed/gbhn9GKJHB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</li>
-								<li>
-									<iframe width="673" height="377" src="https://www.youtube.com/embed/Te8HSAuh56o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</li>
-								<li>
-									<iframe width="673" height="377" src="https://www.youtube.com/embed/_wSvCvJefAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</li>
-								<li>
-									<iframe width="673" height="377" src="https://www.youtube.com/embed/EmCuq5N0Wvc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-								</li>
-							</ul>
-
-							<p class="pos">
-								<label for="pos1"></label>
-								<label for="pos2"></label>
-								<label for="pos3"></label>
-								<label for="pos4"></label>
-								<label for="pos5"></label>
-							</p>
+						<div class="series">
+							<button onclick='changeVideo("https://www.youtube.com/embed/WxpkpIWfpq4?&wmode=transparent&rel=0&showinfo=0&autoplay=0")'>에피소드 #01</button>
+							<button onclick='changeVideo("https://www.youtube.com/embed/gbhn9GKJHB0?&wmode=transparent&rel=0&showinfo=0&autoplay=0")'>에피소드 #02</button>
+							<button onclick='changeVideo("https://www.youtube.com/embed/Te8HSAuh56o?&wmode=transparent&rel=0&showinfo=0&autoplay=0")'>에피소드 #03</button>
+							<button onclick='changeVideo("https://www.youtube.com/embed/_wSvCvJefAk?&wmode=transparent&rel=0&showinfo=0&autoplay=0")'>에피소드 #04</button>
+							<button onclick='changeVideo("https://www.youtube.com/embed/EmCuq5N0Wvc?&wmode=transparent&rel=0&showinfo=0&autoplay=0")'>에피소드 #05</button>
 						</div>
+						<iframe id="myFrame"></iframe>
 					</div>
 				</div>
 			</div>

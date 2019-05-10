@@ -157,66 +157,54 @@ header {
 
 /*세계관 트레일러*/
 .worldTraier {
-	width: 40vw;
-	height: 23vw;
-	background-color: white;
+	width: 673px;
+	height: 422px;
 	position: absolute;
-	margin-top: 28%;
-	margin-left: 28%;
+	margin: 430px auto 0;
+	margin-left: 620px;
 }
 
-.slide {
-	height: 100%;
-	overflow: hidden;
-	position: relative;
+.series {
+	width: 100%;
+	height: 45px;
+	margin-bottom: 10px;
 }
 
-.slide > ul {
-	width: 500%;
-	height: 100%;
-	transition: margin-left 1s;   /*margin-left를 안쓰면 새로고침시 문제 발생*/
-}
-
-.slide > ul > li { 
+.series > button {
 	width: 20%;
 	height: 100%;
 	float: left;
-}
-
-.slide > ul > li:nth-child(n) { background-color: black; }
-
-.slide > ul > li > iframe { width: 100%; height: 100%; }
-
-.slide > input { display: none; }
-
-.slide label {
-	width: 13px;
-	height: 13px;
+	border: none;
+	background-color: rgba(189, 195, 199, 0.7);
 	cursor: pointer;
-	border-radius: 100%;
-	display: inline-block;
-	background-color: #fff;
-	border: 2px solid #666;
-	transition: all 0.5s;
+	border-right: 1px solid black;
+	position: relative;
 }
 
-.slide > .pos {
-	width: 100%;
-	top: 10px;
-	left: 0;
+.series > button:last-child {
+	border-right: 0;
+}
+
+.series > button::after {
 	position: absolute;
-	text-align: center;
+	bottom: 0;
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	background-color: #2fd5c7;
+	transition: width 0.3s;
 }
 
-#pos1:checked~ul { margin-left: 0%; }
-#pos2:checked~ul { margin-left: -100%; }
-#pos3:checked~ul { margin-left: -200%; }
-#pos4:checked~ul { margin-left: -300%; }
-#pos5:checked~ul { margin-left: -400%; }
+.series > button:hover::after {
+	width: 100%;
+	transition: width 0.3s;
+}
 
-#pos1:checked~.pos > label:nth-child(1) { background-color: #666; }
-#pos2:checked~.pos > label:nth-child(2) { background-color: #666; }
-#pos3:checked~.pos > label:nth-child(3) { background-color: #666; }
-#pos4:checked~.pos > label:nth-child(4) { background-color: #666; }
-#pos5:checked~.pos > label:nth-child(5) { background-color: #666; }
+#myFrame {
+	width: 100%;
+	height: 377px;
+	border: none;
+	background-color: black;
+}
 /*세계관 트레일러 끝*/
